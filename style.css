@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fdfbf7;
+  color: #333;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Audio Control */
+.music-control {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+}
+
+.music-control button {
+  background: #0088cc;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  box-shadow: 0 4px 10px rgba(0, 136, 204, 0.3);
+}
+
+/* Header */
+.header {
+  margin-bottom: 25px;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #777;
+}
+
+.names {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  color: #005580;
+  margin: 10px 0;
+}
+
+.date-hero {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+}
+
+/* Couple Info */
+.details-card {
+  background: #f8fbfe;
+  border: 1px solid #e1effe;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.invitation-text {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  color: #004080;
+}
+
+.parents {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.divider {
+  margin: 15px 0;
+  color: #0088cc;
+  font-size: 14px;
+}
+
+/* Scratch Card */
+.scratch-section {
+  margin: 25px 0;
+}
+
+.scratch-section h3 {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.scratch-container {
+  position: relative;
+  width: 300px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.reveal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f2f7fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal-content .day {
+  font-size: 40px;
+  font-weight: 700;
+  color: #005580;
+}
+
+.reveal-content .month {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.reveal-content .day-name {
+  font-size: 12px;
+  color: #666;
+}
+
+.reveal-content .muhurtham {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #0088cc;
+  font-weight: 600;
+}
+
+#scratchCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* Countdown */
+.countdown-section {
+  margin: 25px 0;
+}
+
+.countdown-section h3 {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.timer-display {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.timer-display div {
+  background: #f0f4f8;
+  padding: 10px 14px;
+  border-radius: 8px;
+  min-width: 60px;
+}
+
+.timer-display span {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #005580;
+}
+
+.timer-display label {
+  font-size: 10px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+/* Venue Cards */
+.venue-box {
+  background: #fff;
+  border: 1px solid #eee;
+  border-left: 4px solid #0088cc;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.venue-box h3 {
+  font-size: 15px;
+  color: #004080;
+  margin-bottom: 8px;
+}
+
+.venue-box p {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.map-btn {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #666;
+}

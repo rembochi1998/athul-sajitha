@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athul & Sajitha - Wedding Invitation</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for stylish Malayalam & Serif headings -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Gayathri:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Audio Player -->
+  <div class="music-control">
+    <button id="musicBtn" onclick="toggleAudio()">🎵 Play Music</button>
+    <audio id="bgMusic" loop>
+      <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="container">
+    
+    <!-- Cover / Intro Header -->
+    <header class="header">
+      <p class="sub-title">Wedding Invitation</p>
+      <h1 class="names">ATHUL & SAJITHA</h1>
+      <p class="date-hero">05 • 11 • 2026 | THURSDAY</p>
+    </header>
+
+    <!-- Couple & Invitation Details -->
+    <section class="details-card">
+      <p class="invitation-text">
+        With the blessings of our families and the grace of the divine, 
+        we joyfully invite you to celebrate the wedding of
+      </p>
+
+      <div class="groom-section">
+        <h2>ATHUL RAJ</h2>
+        <p class="parents">Son of <strong>Mr. B. P. Rajan & Mrs. Bindu S.</strong><br>(Kottarathil Veedu, Vilakkudy P.O., Kunnicode)</p>
+      </div>
+
+      <div class="divider">✦ & ✦</div>
+
+      <div class="bride-section">
+        <h2>SAJITHA</h2>
+        <p class="parents">Daughter of <strong>Late Mr. Raveendran P. & Mrs. Rani Bai</strong><br>(Pallippattu House, Velur P.O., Thrissur)</p>
+      </div>
+    </section>
+
+    <!-- Scratch to Reveal Section -->
+    <section class="scratch-section">
+      <h3>Scratch to Reveal the Wedding Date</h3>
+      <div class="scratch-container">
+        <!-- Hidden Revealed Layer -->
+        <div class="reveal-content">
+          <span class="day">05</span>
+          <span class="month">NOVEMBER 2026</span>
+          <span class="day-name">Thursday</span>
+          <p class="muhurtham">Muhurtham: 06:07 AM - 07:00 AM</p>
+        </div>
+        <!-- Scratch Surface Canvas -->
+        <canvas id="scratchCanvas" width="300" height="180"></canvas>
+      </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section">
+      <h3>Counting Down To Our Special Day</h3>
+      <div id="timer" class="timer-display">
+        <div><span id="days">--</span><label>Days</label></div>
+        <div><span id="hours">--</span><label>Hours</label></div>
+        <div><span id="minutes">--</span><label>Mins</label></div>
+        <div><span id="seconds">--</span><label>Secs</label></div>
+      </div>
+    </section>
+
+    <!-- Venue & Reception Info -->
+    <section class="venue-section">
+      <div class="venue-box">
+        <h3>💍 Wedding Ceremony</h3>
+        <p><strong>Date:</strong> November 05, 2026 (Thursday)</p>
+        <p><strong>Venue:</strong> Guruvayur Sree Krishna Temple</p>
+        <p><strong>Muhurtham:</strong> 06:07 AM - 07:00 AM</p>
+        <a href="https://maps.google.com/?q=Guruvayur+Sree+Krishna+Temple" target="_blank" class="map-btn">📍 View Map</a>
+      </div>
+
+      <div class="venue-box">
+        <h3>🎉 Reception</h3>
+        <p><strong>Date:</strong> November 07, 2026 (Saturday)</p>
+        <p><strong>Time:</strong> From 4:00 PM onwards</p>
+        <p><strong>Venue:</strong> Symphony Convention Center, Pineapple Junction, Punalur</p>
+        <a href="https://maps.google.com/?q=Symphony+Convention+Center+Punalur" target="_blank" class="map-btn">📍 View Map</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>With Love & Blessings,<br><strong>B. P. Rajan & Bindu S.</strong></p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
